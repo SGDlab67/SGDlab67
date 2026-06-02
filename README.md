@@ -6,11 +6,11 @@ Welcome to my corner of the decentralized world. I'm a computer science graduate
 
 ## My Story
 
-I came to technology with a simple belief: **decentralization isn't just a buzzword—it's a fundamental shift in how we can organize trust and opportunity**. My journey started with curiosity about blockchain's potential, but it evolved into something deeper.
+I came to technology with a simple belief: **decentralization isn't just a buzzword it's a fundamental shift in how we can organize trust and opportunity**. My journey started with curiosity about blockchain's potential in the finance field, and it evolved into something deeper that freedom for all will lift all lifes through decentralization.
 
-Today, I'm not just learning blockchain technology—I'm living it. By day, I'm pursuing my **M.E. in Computer Science**, diving deep into distributed systems and emerging technologies. By passion, I'm actively building on **Solana**, where transaction throughput meets developer experience in ways that excite me. And as a **part-time liquidity provider**, I'm putting my understanding of DeFi mechanics into practice, while exploring how **AI** can augment trading strategies and financial insights.
+Today, I'm not just learning blockchain technology, I'm living in it. By day, I'm pursuing my **M.E. in Computer Science**, diving deep into distributed systems and emerging technologies. By passion, I'm actively building on **Solana**, where transaction throughput meets developer experience in ways that excite me. And as a **part-time liquidity provider**, I'm putting my understanding of DeFi mechanics into practice, while exploring how **AI** can augment trading strategies and financial insights.
 
-This convergence of interests isn't random. It's intentional. The future of finance lives at the intersection of blockchain reliability, AI intelligence, and human-centric design.
+The future of finance lives at the intersection of blockchain reliability, AI intelligence and leaving intermediaries at the past.
 
 ---
 
@@ -23,7 +23,7 @@ This convergence of interests isn't random. It's intentional. The future of fina
 - 🎓 **Advanced Computer Science** – Systems thinking, distributed computing, emerging tech
 
 ### Technical Interests
-- **Blockchain & Smart Contracts:** Solana, Move, Rust, TypeScript
+- **Blockchain & Smart Contracts:** Solana, Rust, TypeScript
 - **Finance Technologies:** DeFi protocols, liquidity pools, trading mechanisms
 - **AI Applications:** Predictive models, automation, intelligent agents
 - **Backend Systems:** Node.js, distributed systems design
@@ -45,7 +45,7 @@ I'm always excited to:
 ## Fun Facts
 
 - I believe the best way to learn is by building, breaking, and iterating
-- I'm equally comfortable in a terminal and a trading dashboard
+- I'm equally comfortable in any setup, from terminal to data dashboard. Always stay Adaptive!
 - If it involves creating value through technology or understanding financial markets, I'm probably thinking about it
 
 ---
