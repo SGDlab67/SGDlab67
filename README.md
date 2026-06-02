@@ -1,14 +1,53 @@
-### Hi, I'm Huu (SteLe13) 👋 Welcome to my corner of the decentralized world.
+# Hi, I'm Huu 👋
 
-My journey into technology is fueled by a deep fascination with blockchain's potential to empower individuals. I believe everyone has a unique contribution to make, and I'm here to build the tools that make it possible. As a passionate advocate for DeFi and DeSci, I am committed to being a lifelong learner in this space.
+Welcome to my corner of the decentralized world. I'm a computer science graduate student at **Oregon State University**, blockchain engineer, and fintech enthusiast building at the intersection of **Solana**, **AI**, and **Finance Technologies**.
 
-I am currently focused on gaining as much hands-on experience as possible. My learning is centered around the core technologies of dApp development:
+---
 
-- **Smart Contract Languages:** Solidity, Move
-- **Backend & Tooling:** Node.js
+## My Story
 
-I am actively seeking a team where I can contribute my energy, learn from experienced developers, and grow into a key member of a long-term project. I am a quick study, a dedicated team player, and ready to deploy my knowledge to solve real-world problems.
+I came to technology with a simple belief: **decentralization isn't just a buzzword—it's a fundamental shift in how we can organize trust and opportunity**. My journey started with curiosity about blockchain's potential, but it evolved into something deeper.
 
-- 🌱 My goal is to absorb knowledge and contribute to meaningful open-source or professional projects.
-- 🤔 I’m looking for mentorship and opportunities to prove my skills.
-- 📫 You can reach me via [LinkedIn](www.linkedin.com/in/huuforcrypto) or [Email](taihl.work@gmail.com).
+Today, I'm not just learning blockchain technology—I'm living it. By day, I'm pursuing my **M.E. in Computer Science**, diving deep into distributed systems and emerging technologies. By passion, I'm actively building on **Solana**, where transaction throughput meets developer experience in ways that excite me. And as a **part-time liquidity provider**, I'm putting my understanding of DeFi mechanics into practice, while exploring how **AI** can augment trading strategies and financial insights.
+
+This convergence of interests isn't random. It's intentional. The future of finance lives at the intersection of blockchain reliability, AI intelligence, and human-centric design.
+
+---
+
+## What I'm Building & Learning
+
+### Current Focus
+- 🔗 **Solana Ecosystem Development** – Building dApps, exploring Move & Rust
+- 💰 **DeFi & Liquidity Provision** – Hands-on experience in decentralized finance
+- 🤖 **AI × Finance** – Exploring how machine learning reshapes fintech
+- 🎓 **Advanced Computer Science** – Systems thinking, distributed computing, emerging tech
+
+### Technical Interests
+- **Blockchain & Smart Contracts:** Solana, Move, Rust, TypeScript
+- **Finance Technologies:** DeFi protocols, liquidity pools, trading mechanisms
+- **AI Applications:** Predictive models, automation, intelligent agents
+- **Backend Systems:** Node.js, distributed systems design
+
+---
+
+## Let's Connect
+
+I'm always excited to:
+- 🤝 Collaborate on Solana projects or DeFi innovations
+- 📚 Learn from experienced builders in crypto and fintech
+- 💬 Discuss the intersection of AI, blockchain, and sustainable finance
+- 🚀 Join teams working on meaningful problems at scale
+
+**Reach out on [LinkedIn](https://www.linkedin.com/in/huuforcrypto/) for deeper conversations, or explore my projects here on GitHub to see what I'm working on.**
+
+---
+
+## Fun Facts
+
+- I believe the best way to learn is by building, breaking, and iterating
+- I'm equally comfortable in a terminal and a trading dashboard
+- If it involves creating value through technology or understanding financial markets, I'm probably thinking about it
+
+---
+
+*"The best time to understand blockchain was yesterday. The second best time is today."*
