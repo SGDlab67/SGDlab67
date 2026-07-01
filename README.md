@@ -1,6 +1,6 @@
 <h1 align="center">Hi there, I'm Huu 👋</h1>
 
-<h3 align="center">Blockchain Engineer & AI Developer</h3>
+<h3 align="center">Blockchain & AI Developer</h3>
 
 ## About Me
 I am a developer passionate about building decentralized systems with practical, real-world utility. Currently pursuing my M.E. in Computer Science at Oregon State University with a focus on Data Science, I explore the intersection of Agentic AI and blockchain technology. From engineering 24/7 localized AI orchestrators in Python to developing smart contracts using Rust and Anchor on the Solana ecosystem, I thrive on creating robust, meaningful applications.
