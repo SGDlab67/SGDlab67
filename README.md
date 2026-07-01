@@ -1,4 +1,4 @@
-<h1 align="center">Hi there, I'm Stephen (Huu T. Le) 👋</h1>
+<h1 align="center">Hi there, I'm Huu 👋</h1>
 
 <h3 align="center">Blockchain Engineer & AI Developer</h3>
 
