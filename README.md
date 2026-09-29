@@ -1,28 +1,41 @@
-<h1 align="center">Hi there, I'm Huu 👋</h1>
+# Huu
 
-<h3 align="center">Rust Data Engineer · Solana &amp; on-chain data infrastructure</h3>
+Rust data engineer. Solana and on-chain data infrastructure.
 
-## About Me
+## About
 
-I build streaming data infrastructure in Rust. Most of my work lives where a
+I build streaming data infrastructure in Rust. Most of my work sits where a
 firehose of on-chain state meets a database that has to answer questions about
 it: gRPC subscriptions, Anchor account decoding, columnar storage, and the
-operational plumbing that keeps a pipeline running unattended for weeks.
+plumbing that keeps a pipeline running unattended for weeks.
 
-Right now that means two things. **[klend-indexer](https://github.com/SGDlab67/klend-indexer)**
-is a production Rust indexer that subscribes to Kamino Lend account writes over a
-Yellowstone gRPC stream, decodes them with Anchor discriminators, and lands them
-in ClickHouse. It ran continuously on GCP and accumulated ~1.1M account updates
-and ~180K decoded obligation snapshots. Separately, I do network measurement
-research at Oregon State University's ASTRO Lab under Dr. Zane Ma, measuring how
-much validator identity leaks at Solana's gossip layer.
+**[klend-indexer](https://github.com/SGDlab67/klend-indexer)** is the longest
+running piece of that. It subscribes to Kamino Lend account writes over a
+Yellowstone gRPC stream, decodes them with Anchor discriminators, and lands
+them in ClickHouse. On GCP it accumulated roughly 1.1M account updates and
+180K decoded obligation snapshots. It's frozen now, on purpose: Yellowstone
+can't re-serve old slots, so the history was exported to Parquet before the
+stream was stopped. Designing around that one constraint taught me more than
+the rest of the pipeline did.
 
-Solana is the domain I know best, not the boundary. The through-line is Rust and
-data engineering.
+**[karat67](https://github.com/SGDlab67/karat67)** came out of running that
+thing. An indexer can pass every freshness and throughput check while writing
+empty or malformed rows, and every dashboard built on top inherits the error.
+karat67 checks indexed data against the chain itself: account shape against
+the IDL, byte-level reconciliation of sampled accounts, and slot completeness
+against `getBlocks` (skipped slots aren't gaps, which is the part people get
+wrong). Freshness and liveness are deliberately out of scope. Every indexer
+already has those.
 
-When I'm not building, you can probably find me analyzing the conceptual
-mechanics of Devil Fruits in *One Piece*. [Contact me](#-collab-) if you want to
-talk streaming data, Rust, or Solana internals.
+I also do network measurement research at Oregon State's ASTRO Lab under
+Dr. Zane Ma, on how much validator identity leaks at Solana's gossip layer
+and how that leak is weighted by stake and concentrated by cloud provider.
+
+Solana is the domain I know best. What sits underneath it is Rust and data
+engineering, and that part travels.
+
+Off the clock I argue about the conceptual mechanics of Devil Fruits in
+*One Piece*.
 
 ## Skills
 
@@ -44,15 +57,26 @@ talk streaming data, Rust, or Solana internals.
 [![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://www.linux.org/)
 [![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
 
-## Current Projects &amp; Focus
+## What I'm working on
 
-* **[klend-indexer](https://github.com/SGDlab67/klend-indexer):** Rust → Yellowstone gRPC → ClickHouse. Account-level decode, slot-based checkpointing, gap detection, lag metrics, and a freeze/resume runbook so a live pipeline can be parked without losing history.
-* **S-NodeFinder:** network measurement research at OSU ASTRO Lab. How much does Solana's gossip layer leak validator identity, and how is that leak weighted by stake and concentrated by cloud provider?
-* **Cold-path storage:** Parquet and DataFusion beside ClickHouse, so the same dataset serves both live queries and cheap historical scans.
+* **[karat67](https://github.com/SGDlab67/karat67):** integrity checks for
+  Solana indexers, as a Rust crate and a `karat` CLI. Three checks (shape,
+  reconciliation, completeness), JSON output, built to drop into CI next to
+  an existing pipeline. This is the active one.
+* **[klend-indexer](https://github.com/SGDlab67/klend-indexer):** Rust to
+  Yellowstone gRPC to ClickHouse. Account-level decode, slot checkpointing,
+  gap detection, lag metrics, and a freeze/resume runbook. Frozen, maintained,
+  the dataset lives in Parquet on GCS.
+* **S-NodeFinder:** gossip-layer measurement at OSU ASTRO Lab. Collection is
+  running, analysis is paused.
+* **Cold-path storage:** Parquet and DataFusion beside ClickHouse, so one
+  dataset serves live queries and cheap historical scans. Planned, not built.
 
-## 👇 Collab 👇
+## Contact
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/huuforcrypto/)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:taihl.work@gmail.com)
 
+Happy to talk streaming data, Rust, or Solana internals.
 
 *"The clock is the dataset: a stream you stop observing is history you cannot get back."*
