@@ -23,9 +23,11 @@ thing. An indexer can pass every freshness and throughput check while writing
 empty or malformed rows, and every dashboard built on top inherits the error.
 karat67 checks indexed data against the chain itself: account shape against
 the IDL, byte-level reconciliation of sampled accounts, and slot completeness
-against `getBlocks` (skipped slots aren't gaps, which is the part people get
-wrong). Freshness and liveness are deliberately out of scope. Every indexer
-already has those.
+and orphans against `getBlocks` (skipped slots aren't gaps, which is the part
+people get wrong). Freshness and liveness are deliberately out of scope. Every
+indexer already has those. You can
+[try it in the browser](https://sgdlab67.github.io/karat67/) on live Kamino,
+Meteora and Orca accounts, no install.
 
 I also do network measurement research at Oregon State's ASTRO Lab under
 Dr. Zane Ma, on how much validator identity leaks at Solana's gossip layer
@@ -60,17 +62,19 @@ Off the clock I argue about the conceptual mechanics of Devil Fruits in
 ## What I'm working on
 
 * **[karat67](https://github.com/SGDlab67/karat67):** integrity checks for
-  Solana indexers, as a Rust crate and a `karat` CLI. Three checks (shape,
-  reconciliation, completeness), JSON output, built to drop into CI next to
-  an existing pipeline. This is the active one.
+  Solana indexers. Four checks (shape, reconciliation, completeness,
+  orphans) plus an `account` gate, across 29 account types on Kamino Lend,
+  Meteora DBC, Meteora DLMM and Orca Whirlpool. Ships as a Rust crate, a
+  `karat` CLI with JSON output, an MCP server (`karat-mcp`), a wrapper for
+  Carbon decoders, and a WebAssembly demo site. Built for Colosseum's Crypto
+  World's Fair. This is the active one.
 * **[klend-indexer](https://github.com/SGDlab67/klend-indexer):** Rust to
   Yellowstone gRPC to ClickHouse. Account-level decode, slot checkpointing,
-  gap detection, lag metrics, and a freeze/resume runbook. Frozen, maintained,
-  the dataset lives in Parquet on GCS.
+  gap detection, lag metrics, and a freeze/resume runbook. Plus a cold path:
+  a Parquet export queried with DataFusion, so historical scans don't go
+  through ClickHouse. Frozen, maintained, the dataset lives in Parquet on GCS.
 * **S-NodeFinder:** gossip-layer measurement at OSU ASTRO Lab. Collection is
   running, analysis is paused.
-* **Cold-path storage:** Parquet and DataFusion beside ClickHouse, so one
-  dataset serves live queries and cheap historical scans. Planned, not built.
 
 ## Contact
 
